@@ -1776,8 +1776,7 @@ input, select, textarea {
 
 		ul.social li {
 			position: relative;
-			display: inline-block;
-			margin: 0.25em;
+			margin: 0.5em;
 			top: 0;
 			padding-left: 0;
 		}
@@ -1817,6 +1816,10 @@ input, select, textarea {
 					overflow: hidden;
 					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
 					width: 48px;
+				}
+
+				ul.social li a.fa-envelope {
+					background-color: #66CDAA;
 				}
 
 				ul.social li a.fa-twitter {
@@ -1890,6 +1893,50 @@ input, select, textarea {
 					ul.social li a:hover:before {
 						background-color: transparent;
 					}
+					/*____________________________________ */
+
+	ul.icons {
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.icons > li {
+			position: relative;
+			padding: 2em 0 0 3em;
+			margin: 0;
+		}
+
+			ul.icons > li:before {
+				background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+				-moz-transition: background-color .2s ease-in-out;
+				-webkit-transition: background-color .2s ease-in-out;
+				-ms-transition: background-color .2s ease-in-out;
+				transition: background-color .2s ease-in-out;
+				background-color: #444;
+				border-radius: 6px;
+				box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+				color: #2E2E2E !important;
+			
+				font-size: 26px;
+				height: 48px;
+				line-height: 48px;
+				text-align: center;
+				outline: 0;
+				overflow: hidden;
+				text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
+				width: 48px;
+			}
+
+			ul.icons > li:first-child {
+				padding-top: 0;
+			}
+
+				ul.icons > li:first-child:before {
+					top: 0;
+				}
 
 /* Actions */
 
@@ -1962,7 +2009,8 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			display: none;
+			color: white;
+			text-align: right;
 		}
 
 		.icon.solid:before {
