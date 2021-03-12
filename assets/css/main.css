@@ -1658,6 +1658,8 @@ input, select, textarea {
 				width: auto;
 			}
 
+			
+
 /* Button */
 
 	input[type="button"],
@@ -1767,146 +1769,35 @@ input, select, textarea {
 
 /* Social */
 
-	ul.social {
-		cursor: default;
-		margin: 0;
-		list-style: none;
+ul.social {
+	cursor: default;
+	margin: 0;
+	list-style: none;
+	padding-left: 0;
+}
+
+	ul.social li {
+		position: relative;
+		display: inline-block;
+		margin: 0.25em;
+		top: 0;
 		padding-left: 0;
 	}
 
-		ul.social li {
-			position: relative;
-			margin: 0.5em;
+		ul.social li a {
+			-moz-transition: top .2s ease-in-out;
+			-webkit-transition: top .2s ease-in-out;
+			-ms-transition: top .2s ease-in-out;
+			transition: top .2s ease-in-out;
+			display: block;
+			width: 48px;
+			height: 48px;
+			border-radius: 6px;
 			top: 0;
-			padding-left: 0;
-		}
-
-			ul.social li a {
-				-moz-transition: top .2s ease-in-out;
-				-webkit-transition: top .2s ease-in-out;
-				-ms-transition: top .2s ease-in-out;
-				transition: top .2s ease-in-out;
-				display: block;
-				width: 48px;
-				height: 48px;
-				border-radius: 6px;
-				top: 0;
-				position: relative;
-			}
-
-				ul.social li a:before {
-					background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					background-image: url("images/bg.png"), linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
-					-moz-transition: background-color .2s ease-in-out;
-					-webkit-transition: background-color .2s ease-in-out;
-					-ms-transition: background-color .2s ease-in-out;
-					transition: background-color .2s ease-in-out;
-					background-color: #444;
-					border-radius: 6px;
-					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-					color: #2E2E2E !important;
-					display: block;
-					font-size: 26px;
-					height: 48px;
-					line-height: 48px;
-					text-align: center;
-					outline: 0;
-					overflow: hidden;
-					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
-					width: 48px;
-				}
-
-				ul.social li a.fa-envelope {
-					background-color: #66CDAA;
-				}
-
-				ul.social li a.fa-twitter {
-					background-color: #2DAAE4;
-				}
-
-				ul.social li a.fa-facebook-f {
-					background-color: #3C5A98;
-				}
-
-				ul.social li a.fa-dribbble {
-					background-color: #C4376B;
-				}
-
-				ul.social li a.fa-linkedin-in {
-					background-color: #006599;
-				}
-
-				ul.social li a.fa-tumblr {
-					background-color: #51718A;
-				}
-
-				ul.social li a.fa-google-plus {
-					background-color: #DA2713;
-				}
-
-				ul.social li a.fa-github {
-					background-color: #FAFAFA;
-				}
-
-				ul.social li a.fa-rss {
-					background-color: #F2600B;
-				}
-
-				ul.social li a.fa-instagram {
-					background-color: #E0D7C8;
-				}
-
-				ul.social li a.fa-foursquare {
-					background-color: #39A3D4;
-				}
-
-				ul.social li a.fa-skype {
-					background-color: #10BEF1;
-				}
-
-				ul.social li a.fa-soundcloud {
-					background-color: #FE5419;
-				}
-
-				ul.social li a.fa-youtube {
-					background-color: #BF2E25;
-				}
-
-				ul.social li a.fa-blogger {
-					background-color: #FF6501;
-				}
-
-				ul.social li a.fa-flickr {
-					background-color: #0062DB;
-				}
-
-				ul.social li a.fa-vimeo {
-					background-color: #4C8AB0;
-				}
-
-				ul.social li a:hover {
-					top: -5px;
-				}
-
-					ul.social li a:hover:before {
-						background-color: transparent;
-					}
-					/*____________________________________ */
-
-	ul.icons {
-		list-style: none;
-		padding-left: 0;
-	}
-
-		ul.icons > li {
 			position: relative;
-			padding: 2em 0 0 3em;
-			margin: 0;
 		}
 
-			ul.icons > li:before {
+			ul.social li a:before {
 				background-image: url("images/bg.png"), -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 				background-image: url("images/bg.png"), -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 				background-image: url("images/bg.png"), -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
@@ -1919,7 +1810,7 @@ input, select, textarea {
 				border-radius: 6px;
 				box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
 				color: #2E2E2E !important;
-			
+				display: block;
 				font-size: 26px;
 				height: 48px;
 				line-height: 48px;
@@ -1930,13 +1821,78 @@ input, select, textarea {
 				width: 48px;
 			}
 
-			ul.icons > li:first-child {
-				padding-top: 0;
+			ul.social li a.fa-twitter {
+				background-color: #2DAAE4;
 			}
 
-				ul.icons > li:first-child:before {
-					top: 0;
+			ul.social li a.fa-facebook-f {
+				background-color: #3C5A98;
+			}
+
+			ul.social li a.fa-dribbble {
+				background-color: #C4376B;
+			}
+
+			ul.social li a.fa-linkedin-in {
+				background-color: #006599;
+			}
+
+			ul.social li a.fa-tumblr {
+				background-color: #51718A;
+			}
+
+			ul.social li a.fa-google-plus {
+				background-color: #DA2713;
+			}
+
+			ul.social li a.fa-github {
+				background-color: #FAFAFA;
+			}
+
+			ul.social li a.fa-rss {
+				background-color: #F2600B;
+			}
+
+			ul.social li a.fa-instagram {
+				background-color: #E0D7C8;
+			}
+
+			ul.social li a.fa-foursquare {
+				background-color: #39A3D4;
+			}
+
+			ul.social li a.fa-skype {
+				background-color: #10BEF1;
+			}
+
+			ul.social li a.fa-soundcloud {
+				background-color: #FE5419;
+			}
+
+			ul.social li a.fa-youtube {
+				background-color: #BF2E25;
+			}
+
+			ul.social li a.fa-blogger {
+				background-color: #FF6501;
+			}
+
+			ul.social li a.fa-flickr {
+				background-color: #0062DB;
+			}
+
+			ul.social li a.fa-vimeo {
+				background-color: #4C8AB0;
+			}
+
+			ul.social li a:hover {
+				top: -5px;
+			}
+
+				ul.social li a:hover:before {
+					background-color: transparent;
 				}
+
 
 /* Actions */
 
@@ -2009,8 +1965,7 @@ input, select, textarea {
 		}
 
 		.icon > .label {
-			color: white;
-			text-align: right;
+			display: none;
 		}
 
 		.icon.solid:before {
@@ -2491,3 +2446,37 @@ input, select, textarea {
 					}
 
 	}
+
+	ul.icons {
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.icons > li {
+			position: relative;
+			padding: 1.5em 0 0 0em;
+			margin: 0;
+		}
+
+			ul.icons > li:before {
+				position: absolute;
+				left: 0;
+				top: 1em;
+				display: block;
+				font-size: 1.2em;
+				color: #e4e4e4;
+				width: 2em;
+				height: 2em;
+				border-radius: 2em;
+				line-height: 2em;
+				text-align: center;
+				box-shadow: 0.125em 0.175em 0 0 rgba(0, 0, 0, 0.125);
+			}
+
+			ul.icons > li:first-child {
+				padding-top: 0;
+			}
+
+				ul.icons > li:first-child:before {
+					top: 0;
+				}
