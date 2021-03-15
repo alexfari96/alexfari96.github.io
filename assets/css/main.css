@@ -1987,6 +1987,17 @@ ul.social {
 				font-size: 6em;
 			}
 
+		.icon.solid.fas {
+			color: #43B3E0;
+			display: block;
+			margin: 0 0 1.5em 0;
+			cursor: default;
+		}
+
+			.icon.solid.fas:before {
+				font-size: 6em;
+			}
+
 /* Wrappers */
 
 	.wrapper {
@@ -2456,6 +2467,11 @@ ul.social {
 			position: relative;
 			padding: 1.5em 0 0 0em;
 			margin: 0;
+		}
+
+		ul.icons a {
+			color: #999;
+			text-decoration: none;
 		}
 
 			ul.icons > li:before {
